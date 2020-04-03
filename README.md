@@ -8,7 +8,7 @@ Console application to batch converter image file formats using [ImageMagick](ht
 ```csharp
 static void Main(string[] args)
 {
-    Console.WriteLine("Copy and Paste the photos directory below. 
+    Console.WriteLine("Copy and Paste the photos directory below
                        Use SHIFT + INSERT to paste path and Press ENTER.\n");
 
     // Gets the directory where all the photos to convert are located.
