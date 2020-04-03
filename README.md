@@ -1,5 +1,5 @@
 # ImageConverter
-Console application to batch converter image file formats using [ImageMagick](https://github.com/dlemstra/Magick.NET)
+Console application to batch convert image file formats using [ImageMagick](https://github.com/dlemstra/Magick.NET)
 
 ## Console output
 ![Console](image_converter.png?raw=true "Console")
