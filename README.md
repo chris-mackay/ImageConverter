@@ -5,11 +5,12 @@ Console application to batch converter image file formats using [ImageMagick](ht
 ![Console](image_converter.png?raw=true "Console")
 
 ## Using the code
+This particular implentation is converting HEIC files to Jpeg so you can view them in Microsoft Windows
+
 ```csharp
 static void Main(string[] args)
 {
-    Console.WriteLine("Copy and Paste the photos directory below
-                       Use SHIFT + INSERT to paste path and Press ENTER.\n");
+    Console.WriteLine("Use SHIFT + INSERT to paste path and press ENTER.\n");
 
     // Gets the directory where all the photos to convert are located.
     string photos = Console.ReadLine(); 
