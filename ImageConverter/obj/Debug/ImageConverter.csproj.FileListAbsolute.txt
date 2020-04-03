@@ -1,0 +1,8 @@
+C:\Programming\ImageConverter\ImageConverter\bin\Debug\ImageConverter.exe.config
+C:\Programming\ImageConverter\ImageConverter\bin\Debug\ImageConverter.exe
+C:\Programming\ImageConverter\ImageConverter\bin\Debug\ImageConverter.pdb
+C:\Programming\ImageConverter\ImageConverter\bin\Debug\Magick.NET-Q16-AnyCPU.dll
+C:\Programming\ImageConverter\ImageConverter\bin\Debug\Magick.NET-Q16-AnyCPU.xml
+C:\Programming\ImageConverter\ImageConverter\obj\Debug\ImageConverter.csproj.CopyComplete
+C:\Programming\ImageConverter\ImageConverter\obj\Debug\ImageConverter.exe
+C:\Programming\ImageConverter\ImageConverter\obj\Debug\ImageConverter.pdb
