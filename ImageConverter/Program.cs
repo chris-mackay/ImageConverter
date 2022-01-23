@@ -12,19 +12,36 @@ namespace ImageConverter
             Console.WriteLine("Use SHIFT + INSERT to paste path and press ENTER.\n");
 
             // Gets the directory where all the photos to convert are located.
-            string photos = Console.ReadLine();
-            DirectoryInfo dInfo = new DirectoryInfo(photos);
+            string d = Console.ReadLine();
+            DirectoryInfo dInfo = new DirectoryInfo(d);
 
-            // Counter the tell the user the current file that is being processed.
+            // Gets all the HEIC files in the directory
+            string[] photos = Directory.GetFiles(dInfo.ToString(), "*.HEIC");
+
+            // Counter to tell the user the current file that is being processed.
             int counter = 1;
 
             // Gets a total count of files that will be processed.
-            int count = Directory.GetFiles(dInfo.ToString()).Count();
+            int count = photos.Count();
 
             // Add a blank line for clarity.
             Console.WriteLine();
 
-            foreach (string f in Directory.GetFiles(dInfo.ToString()))
+            // Define the directory to store the HEIC files.
+            string dHEIC = Path.Combine(d, "HEIC");
+
+            // Create an archive directory to store all the HEIC files.
+            if (!Directory.Exists(dHEIC))
+            {
+                Directory.CreateDirectory(dHEIC);
+            }
+            else
+            {
+                Directory.Delete(dHEIC, true);
+                Directory.CreateDirectory(dHEIC);
+            }
+
+            foreach (string f in photos)
             {
                 // Get the old file that we want to convert.
                 FileInfo oldFile = new FileInfo(f);
@@ -32,6 +49,9 @@ namespace ImageConverter
 
                 // Create a new MagickImage object so we can set the new format.
                 MagickImage image = new MagickImage(f);
+
+                // Move the HEIC file to the archive directory
+                File.Move(oldFile.ToString(), Path.Combine(dHEIC, name));
 
                 // Set the desired image format to convert to.
                 image.Format = MagickFormat.Jpeg;

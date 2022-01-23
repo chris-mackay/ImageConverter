@@ -3,6 +3,7 @@ C:\Programming\ImageConverter\ImageConverter\bin\Release\ImageConverter.exe
 C:\Programming\ImageConverter\ImageConverter\bin\Release\ImageConverter.pdb
 C:\Programming\ImageConverter\ImageConverter\bin\Release\Magick.NET-Q16-AnyCPU.dll
 C:\Programming\ImageConverter\ImageConverter\bin\Release\Magick.NET-Q16-AnyCPU.xml
+C:\Programming\ImageConverter\ImageConverter\obj\Release\ImageConverter.csproj.CoreCompileInputs.cache
 C:\Programming\ImageConverter\ImageConverter\obj\Release\ImageConverter.csproj.CopyComplete
 C:\Programming\ImageConverter\ImageConverter\obj\Release\ImageConverter.exe
 C:\Programming\ImageConverter\ImageConverter\obj\Release\ImageConverter.pdb
